@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+    <style>
+        body.patient {
+            background-color: lightblue;
+        }
+        body.doctor {
+            background-color: lightgreen;
+        }
+        #chatbot {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Chatbot</h1>
+    <button onclick="setBackground('patient')">Patient</button>
+    <button onclick="setBackground('doctor')">Doctor</button>
+
+    <!-- Chatbot Container -->
+    <iframe id="chatbot" src="YOUR_VOICEFLOW_EMBED_LINK"></iframe>
+
+    <script>
+        function setBackground(role) {
+            document.body.className = role;
+        }
+    </script>
+</body>
+</html>
